@@ -6,6 +6,6 @@ class Card
 {
     public $number;
     public $cvc;
-    public $expM;
-    public $expY;
+    public $expMonth;
+    public $expYear;
 }

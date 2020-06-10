@@ -14,9 +14,9 @@ class PaymentsAPIManager
 
     public function __construct()
     {
-        $this->publicApiKey = PayMayaSDK::getInstance()->getCheckoutPublicApiKey();
-        $this->secretApiKey = PayMayaSDK::getInstance()->getCheckoutSecretApiKey();
-        $this->environment = PayMayaSDK::getInstance()->getCheckoutEnvironment();
+        $this->publicApiKey = PayMayaSDK::getInstance()->getPaymentsPublicApiKey();
+        $this->secretApiKey = PayMayaSDK::getInstance()->getPaymentsSecretApiKey();
+        $this->environment = PayMayaSDK::getInstance()->getPaymentsEnvironment();
         $this->baseUrl = $this->getBaseUrl();
         $this->httpHeaders = ['Content-Type' => 'application/json'];
     }
